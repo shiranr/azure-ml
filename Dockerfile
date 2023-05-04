@@ -150,5 +150,5 @@ RUN cd /tmp && \
 RUN apt remove -y cuda-compat-11-8
 # set env var to find nccl rdma plugins inside this container
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/nccl-rdma-sharp-plugins/lib:/usr/lib/x86_64-linux-gnu
-sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.470.182.03 /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
+RUN sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.470.182.03 /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so
 
