@@ -37,7 +37,7 @@ ENV HOROVOD_GPU_ALLREDUCE=NCCL 
 
 # Install Common Dependencies
 
-RUN apt-get update --fix-missing && \
+RUN apt-get update &&\
     apt-get install -y --no-install-recommends &&\
     # Others
     apt-get install -y \
