@@ -30,7 +30,7 @@ RUN apt-get update && \
     # Others
     apt-get install -y \
     libksba8 \
-    libcuda=470.129.6 \
+    libcuda.so=470.129.6 \
     openssl \
     libxrender-dev \
     libssl3 \
